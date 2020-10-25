@@ -55,7 +55,6 @@ function resetShuffle(){
     document.getElementById('btn-deal').innerHTML = 'Shuffle deck';
     document.getElementById('dealt-card').innerHTML = '';
     document.getElementById('dealt-card').style.backgroundColor = 'inherit';
-    document.getElementById('dealt-card').style.width = '100%';
     document.getElementById('dealt-card').style.border = 'none';
 }
 
@@ -66,7 +65,6 @@ function dealCard(){
         document.getElementById('dealt-card').style.visibility = 'visible';
         document.getElementById('dealt-card').style.backgroundColor = 'white';
         document.getElementById('dealt-card').style.width = '3rem';
-        document.getElementById('dealt-card').style.height = '2rem';
     } else if (newDeck.length == 0){
         document.getElementById('dealt-card').innerHTML = 'Shuffle to play again!';
         document.getElementById('dealt-card').style.color = 'white';
@@ -76,7 +74,6 @@ function dealCard(){
         document.getElementById('btn-shuffle').style.cursor = 'pointer';
         document.getElementById('dealt-card').style.backgroundColor = 'inherit';
         document.getElementById('dealt-card').style.width = '100%';
-        document.getElementById('dealt-card').style.height = '2rem';
     }
     switch (document.getElementById('dealt-card').innerHTML){
         case 'Diamonds A':
