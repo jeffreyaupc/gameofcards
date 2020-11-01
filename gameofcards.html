@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="shuffledeck.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Game of Cards</title>
+    <link rel="stylesheet" href="gameofcards.css">
 </head>
 <body>
+    <header class="top-container">
+        <div class="site-title">
+            <h1>Game of Cards</h1>
+            <p>A daily dose of life</p>
+        </div>
+    </header>
     <div class="main-container">
         <div class="btn-container">
             <button class="btn" id="btn-shuffle" onclick="shuffleDeck()">Shuffle</button>
@@ -19,13 +25,13 @@
         <div id="card-left">cards remaining: 52</div>
         <div id="dealt-card"></div>
         <div id="description-container">
-            <div id="what-to-do">What to do: </div>
+            <div id="what-to-do">Let's see what comes up!</div>
             <div id="description"></div>
+            <div id="footer-container">
+                <span>A deck of life | created by </span><a href="index.html">Jeffrey Au </a><span>&copy; 2020 &nbsp</span>
+            </div>
         </div>
     </div>
-    <footer id="footer-container">
-        <span>A deck of life | created by </span><a href="https://jeffreyaupc.github.io">Jeffrey Au </a><span>&copy; 2020 &nbsp</span>
-    </footer>
-    <script src="shuffledeck.js"></script>
+    <script src="gameofcards.js"></script>
 </body>
 </html>
