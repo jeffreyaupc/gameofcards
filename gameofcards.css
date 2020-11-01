@@ -3,10 +3,21 @@
   padding: 0;
 }
 
-.main-container {
-  align-items: center;
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.site-title{
   justify-content: center;
-  margin: 10rem auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.main-container {
+  margin: 5rem auto;
 }
 
 .btn-container {
@@ -175,18 +186,18 @@
   color: black;
   background-color: rgba(255, 255, 255, 0.376);
   margin: 0 auto;
-  margin-bottom: 25%;
 }
 
 /* footer */
 
 #footer-container {
-  width: 100%;
+  padding: 0 auto;
   justify-content: center;
   align-items: center;
-  text-align: end;
+  text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-left: 25rem;
 }
 
 #footer-container a{
@@ -198,6 +209,82 @@
 }
 
 /* media */
+
+
+
+/* @media (max-height: 1200px) {
+  .site-title{
+    margin: 2rem auto;
+    font-size: 1rem;
+  }
+  #description {
+    width: 20rem;
+    height: 10rem;
+    font-size: 1rem;
+  }  
+} */
+
+@media (max-height: 900px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .site-title{
+    margin: 2rem auto;
+    font-size: 1rem;
+  }
+  #description {
+    width: 20rem;
+    height: 10rem;
+    font-size: 1rem;
+  }
+  #footer-container{
+    font-size: 0.75rem;
+    margin-left: 9rem;
+  }
+}
+
+@media (max-height: 720px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .site-title{
+    margin: 0;
+    font-size: 1rem;
+  }
+  #description {
+    width: 20rem;
+    height: 7rem;
+  }
+  #footer-container{
+    font-size: 0.75rem;
+    margin-left: 9rem;
+  }
+}
+
+@media (max-height: 650px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .site-title{
+    margin: 0;
+    font-size: 1rem;
+  }
+  .main-container{
+    margin: 2rem auto;
+  }
+  #description {
+    width: 20rem;
+    height: 7rem;
+  }
+  #footer-container{
+    font-size: 0.75rem;
+    margin-left: 9rem;
+  }
+}
+
 
 @media (max-width: 1200px) {
   body{
@@ -211,13 +298,13 @@
   #description {
     width: 30rem;
     height: 13rem;
-    margin-bottom: 2rem;
+  }
+  #footer-container{
+    margin-left: 15rem; 
   }
 }
 
-
-
-@media (max-width: 750px) {
+@media (max-width: 980px) {
   .main-container {
     width: 100%;
     margin: 0 auto;
@@ -227,7 +314,6 @@
     width: 20rem;
     height: 10rem;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
   } 
 
   #btn-shuffle{
@@ -237,6 +323,68 @@
     height: 3rem;
     display: block;
     position: absolute;
+    top: 0;
+  }
+
+  #btn-reset{
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 4rem;
+    height: 2.5rem;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+  }
+  #btn-deal{
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 6rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    top: 6.5rem;
+  }
+  #dealt-card{
+    font-size: 1rem;
+    height: 1rem;
+  }
+  #footer-container{
+    font-size: 0.75rem;
+    margin-left: 9rem;
+  }
+  
+  #card-left{
+    font-size: 1rem;
+  }
+
+  #what-to-do{
+    font-size: 1rem;
+  }
+
+}
+
+
+
+@media (max-width: 720px) {
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #description {
+    width: 20rem;
+    height: 9rem;
+    font-size: 1rem;
+  }
+
+  #btn-shuffle{
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 6rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    top: 0;
   }
 
   #btn-reset{
@@ -272,17 +420,78 @@
   #what-to-do{
     font-size: 1rem;
   }
-
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .main-container {
     width: 100%;
     margin: 0 auto;
   }
 
   #description {
-    width: 18rem;
+    width: 20rem;
+    height: 9rem;
+    font-size: 1rem;
+  }
+
+  #btn-shuffle{
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    width: 4rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  
+  #btn-reset{
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    width: 4rem;
+    height: 2.5rem;
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+  }
+  #btn-deal{
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    width: 4rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    top: 6.5rem;
+  }
+  #dealt-card{
+    font-size: 1rem;
+    height: 1rem;
+  }
+  #footer-container{
+    font-size: 0.75rem;
+  }
+  
+  #card-left{
+    font-size: 1rem;
+  }
+
+  #what-to-do{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #description {
+    width: 15rem;
     height: 10rem;
   } 
 
@@ -346,4 +555,3 @@
     height: 1rem;
   }
 }
-
